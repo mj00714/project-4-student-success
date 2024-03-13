@@ -1,7 +1,7 @@
 # project-4-student-success
 
 ### Overview
-Choosing the right education program can be a daunting task. There are thousands of post-secondary institutions in the United States alone and each seeks to attract new students through marketing and published rankings. Colleges and universities will often advertise the merits of their programs but, when comparing, most students want to understand which schools will provide the best return on their investment.
+Choosing the right education program can be a daunting task. There are thousands of post-secondary institutions in the United States alone and each seeks to attract new students through marketing and published rankings. Colleges and universities will often advertise the merits of their programs but- when comparing schools- most students want to understand which schools will provide the best return on their investment.
 
 The goal of our project is to broadly analyze the college market and provide a ML model that offers insight into colleges and universities effect on post-graduate earnings. To do this, we’ll utilize the data.gov college scorecard. It’s a rich dataset that provides detailed metrics. We’ll utilize skills we’ve developed over the past ~20 weeks to create a ML model that can be used to predict the earnings of graduates.
 
@@ -10,12 +10,12 @@ Every college offers a different experience. From specialized programs, to geogr
 To understand the data, we plan to use a multiple linear regression model from scikitlearn. This will help us understand the variables that weigh into a student's income earning potential. 
 
 ### Discovery
-Data.gov maintains a higher education scorecard dataset that contains detailed information on institutions, student demographics and academic performance. We gravitated toward this scorecard/dataset because it is a comprehensive view of the higher education landscape. Each scorecard contains over 200MB of data and there is a supplemental data dictionary that clearly defines the tables. For this analysis, we'll use the institution scorecard.
+Data.gov maintains a higher education scorecard dataset that contains detailed information on institutions, student demographics and academic performance. We gravitated toward this scorecard/dataset because it is a comprehensive view of the higher education landscape. Each scorecard contains over 200MB of data (approx 6500 rows, 2900 columns) and there is a supplemental data dictionary that clearly defines the fields. For this analysis, we'll use the institution scorecard.
 
 ### Data Preparation
-Rather than linking to the data.gov site, we're going to upload and compress the institution scorecard so we're working with a static dataset. We'll remove some unnecessary columns to reduce the file size (under 25MB) but will mostly leave the dataset intact.
+Rather than linking to the data.gov site, we uploaded and compressed the institution scorecard so we had a static dataset. Unnecessary columns were removed to reduce the file size (under 25MB) but the data was mostly left intact.
 
-Next, we'll identify the feature variables. We'll select fields that we feel are relevant to the overall academic experience and contain a mix of data types. Our initial list of features was approximately 80 variables. This was too many to use in the model but served as a good starting point. 
+The next step was identifying the variables. As a group, we selected fields that we felt were relevant to the overall academic experience and contain a mix of data types. Our initial list of features was approximately 80 variables. This was too many to use in the model but served as a good starting point. 
 
 At this point, we decided that our target variable would be the field "Median Earnings of Independent Students Working and Not Enrolled 6 Years After Entry." We chose this as our target because it was a middle-of-the-road metric that would summarize the data appropriately. We discussed using a field that targeted the 90th percentile or mean of earnings but ultimately landed on the median earnings, 6 years after initial enrollment because it would apply to most students. 
 
