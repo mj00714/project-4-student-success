@@ -21,7 +21,7 @@ At this point, we decided that our target variable would be the field "Median Ea
 
 ### CSV Extraction / Database Ingestion
 
-Because of the size of the data, we elected to read the data into Spark, as a starting poing. We created a simple script to read in the unzipped csv file and create a pyspark dataframe. We used this, along with the accompanying data dictionary to refine our original list. 
+Because of the size of the data, we elected to read the data into Spark, as a starting point. We created a simple script to read in the unzipped csv file and create a pyspark dataframe. We used this, along with the accompanying data dictionary to refine our original list. 
 
 ### Cleaning, Transformating and Loading to Pandas
 Since we're leveraging a linear regression model, our feature list needs to be numeric data. Each column will weigh on the model so it's best if the data is comprised of continuous variables. We used this criteria to eliminate our first set of fields. 
