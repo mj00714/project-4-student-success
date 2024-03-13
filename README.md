@@ -1,4 +1,4 @@
-# project-4-student-success
+# Project 4: Predictions of Earnings and Student Success 
 
 ### Overview
 Choosing the right education program can be a daunting task. There are thousands of post-secondary institutions in the United States alone and each seeks to attract new students through marketing and published rankings. Colleges and universities will often advertise the merits of their programs but- when comparing schools- most students want to understand which schools will provide the best return on their investment.
